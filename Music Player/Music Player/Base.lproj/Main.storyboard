@@ -43,7 +43,10 @@
                                     <constraint firstAttribute="height" constant="100" id="HZp-iO-MFX"/>
                                     <constraint firstAttribute="width" constant="100" id="OMC-lM-ab8"/>
                                 </constraints>
-                                <state key="normal" image="play (1)"/>
+                                <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="btn_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sVB-h9-TZ1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -66,6 +69,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="btnplay" destination="mKD-Pw-n4f" id="vVm-7b-VeJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,7 +79,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="play (1)" width="128" height="128"/>
+        <image name="play" width="128" height="128"/>
         <image name="player_bg" width="750" height="1350"/>
         <image name="song1" width="500" height="500"/>
     </resources>
