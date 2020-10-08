@@ -15,6 +15,11 @@
 		04CE630E2529780000F20942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CE630C2529780000F20942 /* LaunchScreen.storyboard */; };
 		04CE63192529780000F20942 /* Music_PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE63182529780000F20942 /* Music_PlayerTests.swift */; };
 		04CE63242529780100F20942 /* Music_PlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE63232529780100F20942 /* Music_PlayerUITests.swift */; };
+		04CEAA6D252EBB7C009E487A /* SongListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEAA6C252EBB7C009E487A /* SongListVC.swift */; };
+		04CEAA6F252EBBDE009E487A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEAA6E252EBBDE009E487A /* TableViewCell.swift */; };
+		04CEAA74252EC969009E487A /* va_vaya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04CEAA71252EC968009E487A /* va_vaya.mp3 */; };
+		04CEAA75252EC969009E487A /* emiway.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04CEAA72252EC969009E487A /* emiway.mp3 */; };
+		04CEAA76252EC969009E487A /* gori_radha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04CEAA73252EC969009E487A /* gori_radha.mp3 */; };
 		04DEE8BD252AC7F6004CAEF6 /* ganesha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04DEE8BC252AC7F6004CAEF6 /* ganesha.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +55,11 @@
 		04CE631F2529780100F20942 /* Music PlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music PlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CE63232529780100F20942 /* Music_PlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_PlayerUITests.swift; sourceTree = "<group>"; };
 		04CE63252529780100F20942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CEAA6C252EBB7C009E487A /* SongListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListVC.swift; sourceTree = "<group>"; };
+		04CEAA6E252EBBDE009E487A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		04CEAA71252EC968009E487A /* va_vaya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = va_vaya.mp3; sourceTree = "<group>"; };
+		04CEAA72252EC969009E487A /* emiway.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = emiway.mp3; sourceTree = "<group>"; };
+		04CEAA73252EC969009E487A /* gori_radha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gori_radha.mp3; sourceTree = "<group>"; };
 		04DEE8BC252AC7F6004CAEF6 /* ganesha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ganesha.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +118,9 @@
 				04CE630A2529780000F20942 /* Assets.xcassets */,
 				04CE630C2529780000F20942 /* LaunchScreen.storyboard */,
 				04CE630F2529780000F20942 /* Info.plist */,
-				04DEE8BC252AC7F6004CAEF6 /* ganesha.mp3 */,
+				04CEAA70252EC93E009E487A /* Song List */,
+				04CEAA6C252EBB7C009E487A /* SongListVC.swift */,
+				04CEAA6E252EBBDE009E487A /* TableViewCell.swift */,
 			);
 			path = "Music Player";
 			sourceTree = "<group>";
@@ -129,6 +141,17 @@
 				04CE63252529780100F20942 /* Info.plist */,
 			);
 			path = "Music PlayerUITests";
+			sourceTree = "<group>";
+		};
+		04CEAA70252EC93E009E487A /* Song List */ = {
+			isa = PBXGroup;
+			children = (
+				04DEE8BC252AC7F6004CAEF6 /* ganesha.mp3 */,
+				04CEAA72252EC969009E487A /* emiway.mp3 */,
+				04CEAA73252EC969009E487A /* gori_radha.mp3 */,
+				04CEAA71252EC968009E487A /* va_vaya.mp3 */,
+			);
+			path = "Song List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +260,11 @@
 			files = (
 				04DEE8BD252AC7F6004CAEF6 /* ganesha.mp3 in Resources */,
 				04CE630E2529780000F20942 /* LaunchScreen.storyboard in Resources */,
+				04CEAA75252EC969009E487A /* emiway.mp3 in Resources */,
 				04CE630B2529780000F20942 /* Assets.xcassets in Resources */,
+				04CEAA76252EC969009E487A /* gori_radha.mp3 in Resources */,
 				04CE6309252977FF00F20942 /* Main.storyboard in Resources */,
+				04CEAA74252EC969009E487A /* va_vaya.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,9 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CEAA6F252EBBDE009E487A /* TableViewCell.swift in Sources */,
 				04CE6306252977FF00F20942 /* ViewController.swift in Sources */,
 				04CE6302252977FF00F20942 /* AppDelegate.swift in Sources */,
 				04CE6304252977FF00F20942 /* SceneDelegate.swift in Sources */,
+				04CEAA6D252EBB7C009E487A /* SongListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
