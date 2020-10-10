@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 struct MySongList
 {
     var img:String!
@@ -14,10 +15,12 @@ struct MySongList
     var singerName:String!
     var filename:String!
 };
+
 class SongListVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     
     var arrSongList=[MySongList]()
+    
     
     @IBOutlet weak var tblSongList: UITableView!
     
@@ -44,6 +47,13 @@ class SongListVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         cell.lblSongName.text=arrSongList[indexPath.row].songName
         cell.lblSingerName.text=arrSongList[indexPath.row].singerName
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ViewController")as! ViewController
+        vc.objsong=arrSongList[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
     
 }

@@ -114,13 +114,13 @@
 				04CE6301252977FF00F20942 /* AppDelegate.swift */,
 				04CE6303252977FF00F20942 /* SceneDelegate.swift */,
 				04CE6305252977FF00F20942 /* ViewController.swift */,
+				04CEAA6C252EBB7C009E487A /* SongListVC.swift */,
+				04CEAA6E252EBBDE009E487A /* TableViewCell.swift */,
 				04CE6307252977FF00F20942 /* Main.storyboard */,
 				04CE630A2529780000F20942 /* Assets.xcassets */,
 				04CE630C2529780000F20942 /* LaunchScreen.storyboard */,
 				04CE630F2529780000F20942 /* Info.plist */,
 				04CEAA70252EC93E009E487A /* Song List */,
-				04CEAA6C252EBB7C009E487A /* SongListVC.swift */,
-				04CEAA6E252EBBDE009E487A /* TableViewCell.swift */,
 			);
 			path = "Music Player";
 			sourceTree = "<group>";
